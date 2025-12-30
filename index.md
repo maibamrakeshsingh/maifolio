@@ -15,13 +15,13 @@ layout: homepage
 
 <!-- Publications Section -->
 <div style="border: 1px solid #e0e0e0; border-radius: 10px; padding: 25px; margin-bottom: 30px; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-<h2 style="color: #2c5282; border-bottom: 2px solid #2c5282; padding-bottom: 10px; margin-top: 0; margin-bottom: 20px; font-weight: 600;">Publications</h2>
+<h2 style="color: #2c5282; border-bottom: 2px solid #2c5282; padding-bottom: 10px; margin-top: 0; margin-bottom: 20px; font-weight: 600;">Projects & Portfolios</h2>
 {% include_relative _includes/publications.md %}
 </div>
 
 <!-- Services Section -->
 <div style="border: 1px solid #e0e0e0; border-radius: 10px; padding: 25px; margin-bottom: 30px; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-<h2 style="color: #2c5282; border-bottom: 2px solid #2c5282; padding-bottom: 10px; margin-top: 0; margin-bottom: 20px; font-weight: 600;">Services</h2>
+<h2 style="color: #2c5282; border-bottom: 2px solid #2c5282; padding-bottom: 10px; margin-top: 0; margin-bottom: 20px; font-weight: 600;">contacts</h2>
 {% include_relative _includes/services.md %}
 </div>
 
