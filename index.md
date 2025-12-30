@@ -2,7 +2,7 @@
 layout: homepage
 ---
 
-## Maibam Rakesh Singh - Statement
+## Personal Statement 
 
 I am a Ph.D. student at ...
 
