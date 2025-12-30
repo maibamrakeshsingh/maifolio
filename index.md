@@ -4,19 +4,13 @@ layout: homepage
 
 <!-- Profile Section with Boundary -->
 <div class="section-boundary">
-## Profile
+## Personal Statement 
 <div class="profile-container">
   <img src="assets/img/avatar.png" alt="Maibam R. Singh" class="profile-image">
   <div class="profile-content">
     I am a Ph.D. student at ...
   </div>
 </div>
-</div>
-
-<!-- Personal Statement Section with Boundary -->
-<div class="section-boundary">
-## Personal Statement 
-I am a Ph.D. student at ...
 </div>
 
 <!-- Publications Section with Boundary -->
