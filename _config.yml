@@ -1,12 +1,12 @@
 # Basic Information
 title: Maibam Rakesh Singh
-position: Data Science & Statistical Physics Research
+position: Data Science & Statistical Physics Researcher
 affiliation: Exploring Advanced Opportunities
-email: yourname (at) example.edu
+email: yourname@example.edu
 
 # Search Engine Optimization (SEO)
-keywords: data science, statistical physics, research, academic homepage
-description: Academic personal homepage showcasing research in Data Science and Mathematical Statistical Physics.
+keywords: data science, statistical physics, research, academic homepage, machine learning, physics
+description: Academic homepage of Maibam Rakesh Singh, showcasing research at the intersection of Data Science and Statistical Physics.
 canonical: https://minimal-light-theme.yliu.me/
 
 # Links
@@ -28,7 +28,7 @@ enable_footnote: true
 auto_dark_mode: true
 
 # Font
-font: "Serif" # or "Sans Serif"
+font: "Serif" # Options: "Serif" or "Sans Serif"
 
 # Google Analytics ID
 google_analytics: UA-111540567-4
@@ -46,4 +46,4 @@ exclude:
   - README_de.md
   - LICENSE
   - minimal-light.gemspec
-  - html_source_file/
+  - .gitignore
