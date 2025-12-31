@@ -4,7 +4,10 @@ layout: homepage
 
 <!-- Profile Section -->
 <div class="profile-card">
-    <h2>Personal Statement</h2>
+    <div class="section-header">
+        <h2>Personal Statement</h2>
+        <div class="title-underline"></div>
+    </div>
     <div class="profile-content">
         <img src="assets/img/ppp.png" alt="Maibam R. Singh" class="profile-image">
         <div class="statement-text">
@@ -16,7 +19,7 @@ layout: homepage
                 My approach combines rigorous mathematical analysis with computational methods to explore phenomena across scales—from microscopic particle interactions to macroscopic phase transitions in complex systems.
             </p>
             
-            <h3 style="color: #2c5282; margin-top: 25px; margin-bottom: 15px; font-weight: 600;">📌 Core Research Interests</h3>
+            <h3>📌 Core Research Interests</h3>
             <ul class="research-interests">
                 <li><strong>Complex Systems & Emergent Phenomena</strong></li>
                 <li><strong>Probability Theory & Stochastic Processes</strong></li>
@@ -25,12 +28,12 @@ layout: homepage
                 <li><strong>Stochastic & Random Geometry</strong></li>
             </ul>
             
-            <h3 style="color: #2c5282; margin-top: 25px; margin-bottom: 15px; font-weight: 600;">🎯 Research Vision</h3>
+            <h3>🎯 Research Vision</h3>
             <p>
                 My work bridges discrete and continuous stochastic modeling with applications in <strong>statistical mechanics, percolation theory, random geometry, and interacting particle systems</strong>. I aim to advance the theoretical understanding of <strong>probability, mathematical physics, and statistical geometry</strong> through rigorous mathematical analysis and formulation.
             </p>
             
-            <h3 style="color: #2c5282; margin-top: 25px; margin-bottom: 15px; font-weight: 600;">💼 Applied & Collaborative Work</h3>
+            <h3>💼 Applied & Collaborative Work</h3>
             <p>
                 Alongside my academic pursuits, I engage in <strong>Data Science and MLOps projects</strong>, applying statistical modeling and computational techniques to solve real-world problems.
             </p>
@@ -40,7 +43,10 @@ layout: homepage
 
 <!-- Publications Section -->
 <div class="publications-card">
-    <h2>Projects & Portfolios</h2>
+    <div class="section-header">
+        <h2>Projects & Portfolios</h2>
+        <div class="title-underline"></div>
+    </div>
     {% include_relative _includes/publications.md %}
 </div>
 
@@ -48,6 +54,13 @@ layout: homepage
 <style>
 .profile-card, .publications-card {
     border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 30px;
+    background: white;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    overflow: hidden;
 }
 
 .profile-card:hover, .publications-card:hover {
@@ -55,14 +68,27 @@ layout: homepage
     box-shadow: 0 6px 16px rgba(0,0,0,0.12);
 }
 
+.section-header {
+    margin-bottom: 25px;
+    position: relative;
+}
+
 .profile-card h2, .publications-card h2 {
     color: #2c5282;
-    border-bottom: 3px solid #2c5282;
-    padding-bottom: 12px;
+    padding-bottom: 8px;
     margin-top: 0;
-    margin-bottom: 25px;
+    margin-bottom: 0;
     font-weight: 700;
     font-size: 1.8rem;
+    display: inline-block;
+}
+
+.title-underline {
+    height: 3px;
+    width: 100%;
+    background: #2c5282;
+    margin-top: 5px;
+    border-radius: 2px;
 }
 
 .profile-content {
@@ -80,6 +106,7 @@ layout: homepage
     border: 4px solid #2c5282;
     box-shadow: 0 5px 15px rgba(44, 82, 130, 0.2);
     flex-shrink: 0;
+    align-self: flex-start;
 }
 
 .statement-text {
@@ -87,16 +114,29 @@ layout: homepage
     font-size: 1.08rem;
     line-height: 1.75;
     color: #333;
+    max-width: calc(100% - 205px);
 }
 
 .statement-text p {
     margin-bottom: 20px;
+    text-align: justify;
+}
+
+.statement-text h3 {
+    color: #2c5282;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 1.3rem;
 }
 
 .research-interests {
     list-style: none;
     padding-left: 0;
     margin: 15px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 8px;
 }
 
 .research-interests li {
@@ -124,11 +164,18 @@ layout: homepage
     
     .profile-card h2, .publications-card h2 {
         color: #63b3ed;
-        border-bottom-color: #63b3ed;
+    }
+    
+    .title-underline {
+        background: #63b3ed;
     }
     
     .statement-text {
         color: #e2e8f0;
+    }
+    
+    .statement-text h3 {
+        color: #63b3ed;
     }
     
     .profile-image {
@@ -153,10 +200,20 @@ layout: homepage
     .profile-image {
         width: 150px;
         height: 150px;
+        align-self: center;
+    }
+    
+    .statement-text {
+        max-width: 100%;
+        text-align: left;
     }
     
     .profile-card, .publications-card {
         padding: 20px;
+    }
+    
+    .research-interests {
+        grid-template-columns: 1fr;
     }
     
     .research-interests li {
@@ -167,6 +224,24 @@ layout: homepage
     .research-interests li:before {
         position: static;
         margin-right: 8px;
+    }
+    
+    .statement-text h3 {
+        text-align: left;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-card, .publications-card {
+        padding: 15px;
+    }
+    
+    .profile-card h2, .publications-card h2 {
+        font-size: 1.5rem;
+    }
+    
+    .statement-text {
+        font-size: 1rem;
     }
 }
 </style>
