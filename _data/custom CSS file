@@ -1,0 +1,6 @@
+/* Add this to your homepage CSS */
+.profile-image, .avatar-image, img[src*="rake.png"] {
+    border: 4px solid #1E88E5 !important;
+    box-shadow: 0 5px 15px rgba(30, 136, 229, 0.3) !important;
+    border-radius: 50% !important;
+}
