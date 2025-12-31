@@ -8,7 +8,20 @@ layout: homepage
 <div style="display: flex; align-items: flex-start; gap: 30px; margin-top: 15px;">
   <img src="assets/img/ppp.png" alt="Maibam R. Singh" style="width: 160px; height: 160px; border-radius: 50%; object-fit: cover; border: 3px solid #2c5282; box-shadow: 0 4px 12px rgba(44, 82, 130, 0.15);">
   <div style="flex: 1; font-size: 1.05em; line-height: 1.7; color: #333;">
-    I am a Ph.D. student at ...
+    I am currently seeking **Ph.D. opportunities in Mathematical Statistics and Mathematical Statistical Physics**, with a strong emphasis on the mathematical foundations of stochastic systems and random processes. My research lies at the intersection of **randomness, geometry, and complex dynamical systems**, where I study how local stochastic interactions give rise to emergent macroscopic behavior.
+
+📌 **Core Research Interests**  
+- **Complex Systems & Emergent Phenomena**  
+- **Probability Theory & Stochastic Processes**  
+- **Percolation Theory & Phase Transitions**  
+- **Interacting Particle Systems**  
+- **Stochastic & Random Geometry**
+
+🎯 **Research Vision**  
+My work bridges discrete and continuous stochastic modeling with applications in **statistical mechanics, percolation theory, random geometry, and interacting particle systems**. I aim to advance the theoretical understanding of **probability, mathematical physics, and statistical geometry** through rigorous mathematical analysis and formulation.
+
+💼 **Applied & Collaborative Work**  
+Alongside my academic pursuits, I engage in **Data Science and MLOps projects**, applying statistical modeling and computational techniques to solve real-world problems.
   </div>
 </div>
 </div>
