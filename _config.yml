@@ -1,43 +1,44 @@
 # Basic Information
-Title: Maibam Rakesh Singh
-Position: Pathways in Data Sciences, Mathematical Statistics & Mathematical Statistical Physics
-Affiliation: "<span style='color:blue; font-weight:bold;'>School of Mathematical Sciences</span>"
-Email: maibamrakeshsingh31@gmail.com
+title: Maibam Rakesh Singh
+position: Pathways in Data Sciences, Mathematical Statistics & Statistical Physics
+affiliation: School of Mathematical Sciences
+affiliation_color: "#1E88E5"  # Professional blue color for affiliation
+email: maibamrakeshsingh31@gmail.com
 
 # Search Engine Optimization (SEO)
-Keywords: data science, statistical physics, machine learning, research, academic homepage, physics, mathematics, statistics
-Description: Academic homepage of Maibam Rakesh Singh, showcasing research at the intersection of Data Science, Mathematical Statistics, and Statistical Physics.
-Canonical: https://minimal-light-theme.yliu.me/
+keywords: data science, statistical physics, machine learning, research, academic homepage, physics, mathematics, statistics
+description: Academic homepage of Maibam Rakesh Singh, showcasing research at the intersection of Data Science, Mathematical Statistics, and Statistical Physics.
+canonical: https://minimal-light-theme.yliu.me/
 
 # Links
-Google_Scholar: # https://scholar.google.com/
-CV_Link: assets/files/curriculum_vitae.pdf
-GitHub_Link: https://github.com/maibamrakeshsingh
-LinkedIn: https://www.linkedin.com/in/maibamrakeshsingh/
-Twitter: # https://twitter.com/
+google_scholar: # https://scholar.google.com/
+cv_link: assets/files/curriculum_vitae.pdf
+github_link: https://github.com/maibamrakeshsingh
+linkedin: https://www.linkedin.com/in/maibamrakeshsingh/
+twitter: # https://twitter.com/
 
 # Images
-Avatar: ./assets/img/rake.png
-Favicon: ./assets/img/favicon.png
-Favicon_Dark: ./assets/img/favicon-dark.png
+avatar: ./assets/img/rake.png
+favicon: ./assets/img/favicon.png
+favicon_dark: ./assets/img/favicon-dark.png
 
 # Footnote
-Enable_Footnote: true
+enable_footnote: true
 
 # Auto Dark Mode
-Auto_Dark_Mode: true
+auto_dark_mode: true
 
 # Font
-Font: "Serif" # Options: "Serif" or "Sans Serif"
+font: "Serif" # Options: "Serif" or "Sans Serif"
 
 # Google Analytics ID
-Google_Analytics: UA-111540567-4
+google_analytics: UA-111540567-4
 
 # Remote Theme for GitHub Pages
-Remote_Theme: yaoyao-liu/minimal-light
+remote_theme: yaoyao-liu/minimal-light
 
 # Excluded Files
-Exclude:
+exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
