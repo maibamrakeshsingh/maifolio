@@ -8,35 +8,59 @@ layout: homepage
         <h2>Personal Statement</h2>
         <div class="title-underline"></div>
     </div>
-    <div class="profile-content">
-        <img src="assets/img/ppp.png" alt="Maibam R. Singh" class="profile-image">
-        <div class="statement-text">
-            <p>
-               🔬 I am currently seeking <strong>Ph.D. opportunities in Mathematical Statistics and Mathematical Statistical Physics</strong>, with a strong emphasis on the mathematical foundations of stochastic systems and random processes. My research lies at the intersection of <strong>randomness, geometry, and complex dynamical systems</strong>, where I study how local stochastic interactions give rise to emergent macroscopic behavior.
-            </p>
-            
-            <p>
-                My approach combines rigorous mathematical analysis with computational methods to explore phenomena across scales—from microscopic particle interactions to macroscopic phase transitions in complex systems.
-            </p>
-            
-            <h3>📌 Core Research Interests</h3>
-            <ul class="research-interests">
-                <li><strong>Complex Systems & Emergent Phenomena</strong></li>
-                <li><strong>Probability Theory & Stochastic Processes</strong></li>
-                <li><strong>Percolation Theory & Phase Transitions</strong></li>
-                <li><strong>Interacting Particle Systems</strong></li>
-                <li><strong>Stochastic & Random Geometry</strong></li>
-            </ul>
-            
-            <h3>🎯 Research Vision</h3>
-            <p>
-                My work bridges discrete and continuous stochastic modeling with applications in <strong>statistical mechanics, percolation theory, random geometry, and interacting particle systems</strong>. I aim to advance the theoretical understanding of <strong>probability, mathematical physics, and statistical geometry</strong> through rigorous mathematical analysis and formulation.
-            </p>
-            
-            <h3>💼 Applied & Collaborative Work</h3>
-            <p>
-                Alongside my academic pursuits, I engage in <strong>Data Science and MLOps projects</strong>, applying statistical modeling and computational techniques to solve real-world problems.
-            </p>
+    
+    <div class="profile-section">
+        <div class="section-content">
+            <img src="https://raw.githubusercontent.com/maibamraja-singh/maibamraja-singh.github.io/main/assets/img/research-icon.png" alt="Research Icon" class="section-icon">
+            <div class="section-text">
+                <p>
+                   🔬 I am currently seeking <strong>Ph.D. opportunities in Mathematical Statistics and Mathematical Statistical Physics</strong>, with a strong emphasis on the mathematical foundations of stochastic systems and random processes. My research lies at the intersection of <strong>randomness, geometry, and complex dynamical systems</strong>, where I study how local stochastic interactions give rise to emergent macroscopic behavior.
+                </p>
+                
+                <p>
+                    My approach combines rigorous mathematical analysis with computational methods to explore phenomena across scales—from microscopic particle interactions to macroscopic phase transitions in complex systems.
+                </p>
+            </div>
+        </div>
+        
+        <div class="profile-section">
+            <div class="section-content">
+                <img src="https://raw.githubusercontent.com/maibamraja-singh/maibamraja-singh.github.io/main/assets/img/interests-icon.png" alt="Research Interests Icon" class="section-icon">
+                <div class="section-text">
+                    <h3>📌 Core Research Interests</h3>
+                    <ul class="research-interests">
+                        <li><strong>Complex Systems & Emergent Phenomena</strong></li>
+                        <li><strong>Probability Theory & Stochastic Processes</strong></li>
+                        <li><strong>Percolation Theory & Phase Transitions</strong></li>
+                        <li><strong>Interacting Particle Systems</strong></li>
+                        <li><strong>Stochastic & Random Geometry</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="profile-section">
+            <div class="section-content">
+                <img src="https://raw.githubusercontent.com/maibamraja-singh/maibamraja-singh.github.io/main/assets/img/vision-icon.png" alt="Vision Icon" class="section-icon">
+                <div class="section-text">
+                    <h3>🎯 Research Vision</h3>
+                    <p>
+                        My work bridges discrete and continuous stochastic modeling with applications in <strong>statistical mechanics, percolation theory, random geometry, and interacting particle systems</strong>. I aim to advance the theoretical understanding of <strong>probability, mathematical physics, and statistical geometry</strong> through rigorous mathematical analysis and formulation.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="profile-section">
+            <div class="section-content">
+                <img src="https://raw.githubusercontent.com/maibamraja-singh/maibamraja-singh.github.io/main/assets/img/collab-icon.png" alt="Collaboration Icon" class="section-icon">
+                <div class="section-text">
+                    <h3>💼 Applied & Collaborative Work</h3>
+                    <p>
+                        Alongside my academic pursuits, I engage in <strong>Data Science and MLOps projects</strong>, applying statistical modeling and computational techniques to solve real-world problems.
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -91,42 +115,58 @@ layout: homepage
     border-radius: 2px;
 }
 
-.profile-content {
+.profile-section {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.profile-section:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.section-content {
     display: flex;
     align-items: flex-start;
-    gap: 35px;
-    margin-top: 15px;
+    gap: 25px;
+    margin-top: 10px;
 }
 
-.profile-image {
-    width: 170px;
-    height: 170px;
+.section-icon {
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     object-fit: cover;
-    border: 4px solid #2c5282;
-    box-shadow: 0 5px 15px rgba(44, 82, 130, 0.2);
+    border: 3px solid #2c5282;
+    background: #f8fafc;
+    padding: 8px;
     flex-shrink: 0;
-    align-self: flex-start;
+    box-shadow: 0 4px 8px rgba(44, 82, 130, 0.15);
 }
 
-.statement-text {
+.section-text {
     flex: 1;
-    font-size: 1.08rem;
-    line-height: 1.75;
-    color: #333;
 }
 
-.statement-text p {
-    margin-bottom: 20px;
-    text-align: justify;
-}
-
-.statement-text h3 {
+.section-text h3 {
     color: #2c5282;
-    margin-top: 25px;
+    margin-top: 0;
     margin-bottom: 15px;
     font-weight: 600;
     font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.section-text p {
+    font-size: 1.08rem;
+    line-height: 1.75;
+    color: #333;
+    margin-bottom: 0;
+    text-align: justify;
 }
 
 .research-interests {
@@ -139,10 +179,13 @@ layout: homepage
 }
 
 .research-interests li {
-    padding: 8px 0;
-    padding-left: 25px;
+    padding: 10px 0;
+    padding-left: 30px;
     position: relative;
     margin-bottom: 5px;
+    background: #f8fafc;
+    border-radius: 6px;
+    border-left: 4px solid #2c5282;
 }
 
 .research-interests li:before {
@@ -150,7 +193,8 @@ layout: homepage
     color: #2c5282;
     font-weight: bold;
     position: absolute;
-    left: 0;
+    left: 12px;
+    top: 10px;
 }
 
 /* Dark Mode Support */
@@ -161,6 +205,10 @@ layout: homepage
         box-shadow: 0 4px 12px rgba(0,0,0,0.25);
     }
     
+    .profile-section {
+        border-bottom-color: #404040;
+    }
+    
     .profile-card h2, .publications-card h2 {
         color: #63b3ed;
     }
@@ -169,17 +217,23 @@ layout: homepage
         background: #63b3ed;
     }
     
-    .statement-text {
+    .section-text p {
         color: #e2e8f0;
     }
     
-    .statement-text h3 {
+    .section-text h3 {
         color: #63b3ed;
     }
     
-    .profile-image {
+    .section-icon {
         border-color: #63b3ed;
-        box-shadow: 0 5px 15px rgba(99, 179, 237, 0.25);
+        background: #2d3748;
+        box-shadow: 0 4px 8px rgba(99, 179, 237, 0.2);
+    }
+    
+    .research-interests li {
+        background: #2d3748;
+        border-left-color: #63b3ed;
     }
     
     .research-interests li:before {
@@ -189,25 +243,29 @@ layout: homepage
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .profile-content {
+    .section-content {
         flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 25px;
+        align-items: flex-start;
+        gap: 20px;
     }
     
-    .profile-image {
-        width: 150px;
-        height: 150px;
+    .section-icon {
+        width: 50px;
+        height: 50px;
         align-self: center;
     }
     
-    .statement-text {
-        text-align: left;
+    .section-text h3 {
+        font-size: 1.2rem;
     }
     
     .profile-card, .publications-card {
         padding: 20px;
+    }
+    
+    .profile-section {
+        margin-bottom: 25px;
+        padding-bottom: 25px;
     }
     
     .research-interests {
@@ -215,17 +273,11 @@ layout: homepage
     }
     
     .research-interests li {
-        padding-left: 0;
-        text-align: left;
+        padding-left: 25px;
     }
     
     .research-interests li:before {
-        position: static;
-        margin-right: 8px;
-    }
-    
-    .statement-text h3 {
-        text-align: left;
+        left: 8px;
     }
 }
 
@@ -238,8 +290,13 @@ layout: homepage
         font-size: 1.5rem;
     }
     
-    .statement-text {
+    .section-text p {
         font-size: 1rem;
+    }
+    
+    .section-icon {
+        width: 45px;
+        height: 45px;
     }
 }
 </style>
