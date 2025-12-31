@@ -38,10 +38,12 @@ layout: homepage
     </div>
 </div>
 
-<!-- Publications Section -->
+<!-- Projects Section -->
 <div class="publications-card">
-    <h2><img src="https://raw.githubusercontent.com/maibamrakeshsingh/maibamrakeshsingh.github.io/main/assets/icons/projects-icon.png" alt="Projects" class="section-icon-img"> Projects & Portfolios</h2>
-    {% include_relative _includes/publications.md %}
+    <h2><img src="https://raw.githubusercontent.com/maibamrakeshsingh/maibamrakeshsingh.github.io/main/assets/icons/projects-icon.png" alt="Projects" class="section-icon-img"> Project & Portfolio</h2>
+    <div class="statement-text">
+        <p><strong>Highlighted Project:</strong> Development of stochastic models for phase transitions in complex systems, integrating mathematical statistics with computational simulations. This portfolio demonstrates my ability to bridge theory and applied data science.</p>
+    </div>
 </div>
 
 <!-- CSS Styles -->
@@ -177,7 +179,6 @@ h3 {
         color: #63b3ed;
     }
     
-    /* Invert icon colors for dark mode if needed */
     .section-icon-img, .inline-icon-img {
         filter: invert(1) brightness(1.5);
     }
