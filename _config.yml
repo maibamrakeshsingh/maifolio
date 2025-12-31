@@ -17,8 +17,9 @@ github_link: https://github.com/maibamrakeshsingh
 linkedin: https://www.linkedin.com/in/maibamrakeshsingh/
 twitter: # https://twitter.com/
 
-# Images
+# Images & Styling
 avatar: ./assets/img/rake.png
+avatar_style: "border: 4px solid #1E88E5; box-shadow: 0 5px 15px rgba(30, 136, 229, 0.3); border-radius: 50%;"  # Avatar styling with boundary
 favicon: ./assets/img/favicon.png
 favicon_dark: ./assets/img/favicon-dark.png
 
