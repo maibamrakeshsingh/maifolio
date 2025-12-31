@@ -4,19 +4,19 @@ layout: homepage
 
 <!-- Profile Section -->
 <div class="profile-card">
-    <h2><img src="https://raw.githubusercontent.com/maibamrakeshsingh/maibamrakeshsingh.github.io/main/assets/icons/profile-icon.png" alt="Profile" class="section-icon-img"> Personal Statement</h2>
+    <h2>Personal Statement</h2>
     <div class="profile-content">
         <img src="assets/img/ppp.png" alt="Maibam R. Singh" class="profile-image">
         <div class="statement-text">
             <p>
-               <img src="https://raw.githubusercontent.com/maibamrakeshsingh/maibamrakeshsingh.github.io/main/assets/icons/microscope-icon.png" alt="Research" class="inline-icon-img"> I am currently seeking <strong>Ph.D. opportunities in Mathematical Statistics and Mathematical Statistical Physics</strong>, with a strong emphasis on the mathematical foundations of stochastic systems and random processes. My research lies at the intersection of <strong>randomness, geometry, and complex dynamical systems</strong>, where I study how local stochastic interactions give rise to emergent macroscopic behavior.
+               🔬 I am currently seeking <strong>Ph.D. opportunities in Mathematical Statistics and Mathematical Statistical Physics</strong>, with a strong emphasis on the mathematical foundations of stochastic systems and random processes. My research lies at the intersection of <strong>randomness, geometry, and complex dynamical systems</strong>, where I study how local stochastic interactions give rise to emergent macroscopic behavior.
             </p>
             
             <p>
                 My approach combines rigorous mathematical analysis with computational methods to explore phenomena across scales—from microscopic particle interactions to macroscopic phase transitions in complex systems.
             </p>
             
-            <h3><img src="https://raw.githubusercontent.com/maibamrakeshsingh/maibamrakeshsingh.github.io/main/assets/icons/interests-icon.png" alt="Interests" class="section-icon-img"> Core Research Interests</h3>
+            <h3 style="color: #2c5282; margin-top: 25px; margin-bottom: 15px; font-weight: 600;">📌 Core Research Interests</h3>
             <ul class="research-interests">
                 <li><strong>Complex Systems & Emergent Phenomena</strong></li>
                 <li><strong>Probability Theory & Stochastic Processes</strong></li>
@@ -25,12 +25,12 @@ layout: homepage
                 <li><strong>Stochastic & Random Geometry</strong></li>
             </ul>
             
-            <h3><img src="https://raw.githubusercontent.com/maibamrakeshsingh/maibamrakeshsingh.github.io/main/assets/icons/vision-icon.png" alt="Vision" class="section-icon-img"> Research Vision</h3>
+            <h3 style="color: #2c5282; margin-top: 25px; margin-bottom: 15px; font-weight: 600;">🎯 Research Vision</h3>
             <p>
                 My work bridges discrete and continuous stochastic modeling with applications in <strong>statistical mechanics, percolation theory, random geometry, and interacting particle systems</strong>. I aim to advance the theoretical understanding of <strong>probability, mathematical physics, and statistical geometry</strong> through rigorous mathematical analysis and formulation.
             </p>
             
-            <h3><img src="https://raw.githubusercontent.com/maibamrakeshsingh/maibamrakeshsingh.github.io/main/assets/icons/work-icon.png" alt="Work" class="section-icon-img"> Applied & Collaborative Work</h3>
+            <h3 style="color: #2c5282; margin-top: 25px; margin-bottom: 15px; font-weight: 600;">💼 Applied & Collaborative Work</h3>
             <p>
                 Alongside my academic pursuits, I engage in <strong>Data Science and MLOps projects</strong>, applying statistical modeling and computational techniques to solve real-world problems.
             </p>
@@ -38,12 +38,10 @@ layout: homepage
     </div>
 </div>
 
-<!-- Projects Section -->
+<!-- Publications Section -->
 <div class="publications-card">
-    <h2><img src="https://raw.githubusercontent.com/maibamrakeshsingh/maibamrakeshsingh.github.io/main/assets/icons/projects-icon.png" alt="Projects" class="section-icon-img"> Project & Portfolio</h2>
-    <div class="statement-text">
-        <p><strong>Highlighted Project:</strong> Development of stochastic models for phase transitions in complex systems, integrating mathematical statistics with computational simulations. This portfolio demonstrates my ability to bridge theory and applied data science.</p>
-    </div>
+    <h2>Projects & Portfolios</h2>
+    {% include_relative _includes/publications.md %}
 </div>
 
 <!-- CSS Styles -->
@@ -71,33 +69,6 @@ layout: homepage
     margin-bottom: 25px;
     font-weight: 700;
     font-size: 1.8rem;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-h3 {
-    color: #2c5282;
-    margin-top: 25px;
-    margin-bottom: 15px;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.section-icon-img {
-    width: 28px;
-    height: 28px;
-    object-fit: contain;
-}
-
-.inline-icon-img {
-    width: 20px;
-    height: 20px;
-    object-fit: contain;
-    margin-right: 8px;
-    vertical-align: middle;
 }
 
 .profile-content {
@@ -162,10 +133,6 @@ h3 {
         border-bottom-color: #63b3ed;
     }
     
-    h3 {
-        color: #63b3ed;
-    }
-    
     .statement-text {
         color: #e2e8f0;
     }
@@ -177,10 +144,6 @@ h3 {
     
     .research-interests li:before {
         color: #63b3ed;
-    }
-    
-    .section-icon-img, .inline-icon-img {
-        filter: invert(1) brightness(1.5);
     }
 }
 
@@ -210,22 +173,6 @@ h3 {
     .research-interests li:before {
         position: static;
         margin-right: 8px;
-    }
-    
-    .profile-card h2, .publications-card h2, h3 {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-    }
-    
-    .section-icon-img {
-        width: 24px;
-        height: 24px;
-    }
-    
-    .inline-icon-img {
-        width: 18px;
-        height: 18px;
     }
 }
 </style>
