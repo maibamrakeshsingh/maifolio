@@ -9,17 +9,6 @@ layout: homepage
         <img src="assets/img/ppp.png" alt="Maibam R. Singh" class="profile-image">
         <div class="statement-text">
             <p>
-               ---
-layout: homepage
----
-
-<!-- Profile Section -->
-<div class="profile-card">
-    <h2>Personal Statement</h2>
-    <div class="profile-content">
-        <img src="assets/img/ppp.png" alt="Maibam R. Singh" class="profile-image">
-        <div class="statement-text">
-            <p>
                🔬 I am currently seeking <strong>Ph.D. opportunities in Mathematical Statistics and Mathematical Statistical Physics</strong>, with a strong emphasis on the mathematical foundations of stochastic systems and random processes. My research lies at the intersection of <strong>randomness, geometry, and complex dynamical systems</strong>, where I study how local stochastic interactions give rise to emergent macroscopic behavior.
             </p>
             
