@@ -18,7 +18,9 @@ layout: homepage
             <p>
                 My approach combines rigorous mathematical analysis with computational methods to explore phenomena across scales—from microscopic particle interactions to macroscopic phase transitions in complex systems.
             </p>
-            
+         <div class="profile-content">
+        <img src="assets/img/ppp.png" alt="Maibam R. Singh" class="profile-image">
+        <div class="statement-text">   
             <h3>📌 Core Research Interests</h3>
             <ul class="research-interests">
                 <li><strong>Complex Systems & Emergent Phenomena</strong></li>
@@ -27,12 +29,16 @@ layout: homepage
                 <li><strong>Interacting Particle Systems</strong></li>
                 <li><strong>Stochastic & Random Geometry</strong></li>
             </ul>
-            
+          <div class="profile-content">
+        <img src="assets/img/ppp.png" alt="Maibam R. Singh" class="profile-image">
+        <div class="statement-text">  
             <h3>🎯 Research Vision</h3>
             <p>
                 My work bridges discrete and continuous stochastic modeling with applications in <strong>statistical mechanics, percolation theory, random geometry, and interacting particle systems</strong>. I aim to advance the theoretical understanding of <strong>probability, mathematical physics, and statistical geometry</strong> through rigorous mathematical analysis and formulation.
             </p>
-            
+          <div class="profile-content">
+        <img src="assets/img/ppp.png" alt="Maibam R. Singh" class="profile-image">
+        <div class="statement-text">  
             <h3>💼 Applied & Collaborative Work</h3>
             <p>
                 Alongside my academic pursuits, I engage in <strong>Data Science and MLOps projects</strong>, applying statistical modeling and computational techniques to solve real-world problems.
