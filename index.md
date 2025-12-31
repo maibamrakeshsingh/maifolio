@@ -18,7 +18,7 @@ layout: homepage
                 </p>
                 
                 <p>
-                    My approach combines rigorous mathematical analysis with computational methods to explore phenomena across scales—from microscopic particle interactions to macroscopic phase transitions in complex systems.
+                    My approach combines rigorous mathematical analysis with computational methods to explore phenomena across scales, from microscopic particle interactions to macroscopic phase transitions in complex systems.
                 </p>
             </div>
         </div>
