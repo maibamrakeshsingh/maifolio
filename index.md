@@ -48,12 +48,6 @@ layout: homepage
 <style>
 .profile-card, .publications-card {
     border: 1px solid #e0e0e0;
-    border-radius: 12px;
-    padding: 30px;
-    margin-bottom: 35px;
-    background: #ffffff;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .profile-card:hover, .publications-card:hover {
