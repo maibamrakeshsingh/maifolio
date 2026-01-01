@@ -11,7 +11,7 @@ layout: homepage
     
     <div class="profile-section">
         <div class="section-content">
-            <img src="https://raw.githubusercontent.com/maibamraja-singh/maibamraja-singh.github.io/main/assets/img/ppp.png" alt="Research Icon" class="section-icon">
+            <img src="/assets/img/ppp.png" alt="Research Icon" class="section-icon">
             <div class="section-text">
                 <p>
                    🔬 I am currently seeking <strong>Ph.D. opportunities in Mathematical Statistics and Mathematical Statistical Physics</strong>, with a strong emphasis on the mathematical foundations of stochastic systems and random processes. My research lies at the intersection of <strong>randomness, geometry, and complex dynamical systems</strong>, where I study how local stochastic interactions give rise to emergent macroscopic behavior.
