@@ -14,7 +14,7 @@ layout: homepage
         <div class="profile-section">
             <div class="section-content">
                 <div class="section-icon">
-                    <img src="/assets/img/profile-icon.png" alt="Profile icon - Researcher portrait or symbol">
+                    <img src="/assets/img/ppp.png" alt="Profile icon - Researcher portrait or symbol">
                 </div>
                 <div class="section-text">
                     <p>
