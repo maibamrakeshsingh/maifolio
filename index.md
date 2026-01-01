@@ -25,7 +25,7 @@ layout: homepage
         
         <div class="profile-section">
             <div class="section-content">
-                <img src="https://raw.githubusercontent.com/maibamraja-singh/maibamraja-singh.github.io/main/assets/img/interests-icon.png" alt="Research Interests Icon" class="section-icon">
+                <img src="/assets/img/ppp.png">
                 <div class="section-text">
                     <h3>📌 Core Research Interests</h3>
                     <ul class="research-interests">
@@ -41,7 +41,7 @@ layout: homepage
         
         <div class="profile-section">
             <div class="section-content">
-                <img src="https://raw.githubusercontent.com/maibamraja-singh/maibamraja-singh.github.io/main/assets/img/vision-icon.png" alt="Vision Icon" class="section-icon">
+                <img src="/assets/img/ppp.png">
                 <div class="section-text">
                     <h3>🎯 Research Vision</h3>
                     <p>
@@ -53,7 +53,7 @@ layout: homepage
         
         <div class="profile-section">
             <div class="section-content">
-                <img src="https://raw.githubusercontent.com/maibamraja-singh/maibamraja-singh.github.io/main/assets/img/collab-icon.png" alt="Collaboration Icon" class="section-icon">
+                <img src="/assets/img/ppp.png">
                 <div class="section-text">
                     <h3>💼 Applied & Collaborative Work</h3>
                     <p>
