@@ -13,9 +13,6 @@ layout: homepage
         <!-- Main Profile Section -->
         <div class="profile-section">
             <div class="section-content">
-                <div class="section-image">
-                    <img src="/assets/img/ppp.png">
-                </div>
                 <div class="section-text">
                     <p>
                        🔬 I am currently seeking <strong>Ph.D. opportunities in Mathematical Statistics and Mathematical Statistical Physics</strong>, with a strong emphasis on the mathematical foundations of stochastic systems and random processes. My research lies at the intersection of <strong>randomness, geometry, and complex dynamical systems</strong>, where I study how local stochastic interactions give rise to emergent macroscopic behavior.
@@ -30,9 +27,6 @@ layout: homepage
         <!-- Core Research Interests -->
         <div class="profile-section">
             <div class="section-content">
-                <div class="section-image">
-                    <img src="/assets/img/research-interests.jpg" alt="Complex systems and network visualization">
-                </div>
                 <div class="section-text">
                     <h3>📌 Core Research Interests</h3>
                     <ul class="research-interests">
@@ -49,9 +43,6 @@ layout: homepage
         <!-- Research Vision -->
         <div class="profile-section">
             <div class="section-content">
-                <div class="section-image">
-                    <img src="/assets/img/research-vision.jpg" alt="Research vision and future directions">
-                </div>
                 <div class="section-text">
                     <h3>🎯 Research Vision</h3>
                     <p>
@@ -64,9 +55,6 @@ layout: homepage
         <!-- Applied Work -->
         <div class="profile-section">
             <div class="section-content">
-                <div class="section-image">
-                    <img src="/assets/img/applied-work.jpg" alt="Data science and machine learning applications">
-                </div>
                 <div class="section-text">
                     <h3>💼 Applied & Collaborative Work</h3>
                     <p>
@@ -154,46 +142,13 @@ layout: homepage
 
 /* Section Content */
 .section-content {
-    display: flex;
-    align-items: flex-start;
-    gap: 30px;
+    display: block;
     margin-top: 15px;
-}
-
-/* Section Images */
-.section-image {
-    flex-shrink: 0;
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 4px solid #2c5282;
-    box-shadow: 0 6px 20px rgba(44, 82, 130, 0.15);
-    transition: all 0.3s ease;
-    position: relative;
-}
-
-.section-image:hover {
-    transform: scale(1.05);
-    border-color: #4299e1;
-    box-shadow: 0 8px 25px rgba(44, 82, 130, 0.25);
-}
-
-.section-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s ease;
-}
-
-.section-image:hover img {
-    transform: scale(1.1);
 }
 
 /* Section Text */
 .section-text {
-    flex: 1;
-    min-width: 0; /* Prevent flex item overflow */
+    width: 100%;
 }
 
 .section-text h3 {
@@ -303,16 +258,6 @@ layout: homepage
         border-bottom-color: #4a5568;
     }
     
-    .section-image {
-        border-color: #63b3ed;
-        box-shadow: 0 6px 20px rgba(99, 179, 237, 0.2);
-    }
-    
-    .section-image:hover {
-        border-color: #90cdf4;
-        box-shadow: 0 8px 25px rgba(99, 179, 237, 0.3);
-    }
-    
     .research-interests li {
         background: linear-gradient(135deg, #2d3748, #4a5568);
         border-left-color: #63b3ed;
@@ -335,22 +280,12 @@ layout: homepage
 /* Responsive Design */
 @media (max-width: 768px) {
     .section-content {
-        flex-direction: column;
-        align-items: center;
-        gap: 25px;
-        text-align: center;
-    }
-    
-    .section-image {
-        width: 120px;
-        height: 120px;
-        align-self: center;
+        text-align: left;
     }
     
     .section-text h3 {
         font-size: 1.4rem;
-        justify-content: center;
-        text-align: center;
+        text-align: left;
     }
     
     .profile-card, .publications-card {
@@ -405,12 +340,6 @@ layout: homepage
         line-height: 1.7;
     }
     
-    .section-image {
-        width: 100px;
-        height: 100px;
-        border-width: 3px;
-    }
-    
     .section-text h3 {
         font-size: 1.3rem;
         margin-bottom: 15px;
@@ -428,10 +357,6 @@ layout: homepage
 }
 
 /* Accessibility improvements */
-.section-image img {
-    display: block;
-}
-
 .section-text strong {
     font-weight: 700;
     color: #2c5282;
@@ -449,7 +374,6 @@ html {
 }
 
 /* Focus styles for accessibility */
-.section-image:focus,
 .research-interests li:focus {
     outline: 3px solid #4299e1;
     outline-offset: 2px;
@@ -461,11 +385,6 @@ html {
         box-shadow: none;
         border: 1px solid #ccc;
         break-inside: avoid;
-    }
-    
-    .section-image {
-        border: 2px solid #333;
-        box-shadow: none;
     }
     
     .profile-card:hover, .publications-card:hover {
