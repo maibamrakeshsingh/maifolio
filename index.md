@@ -9,23 +9,30 @@ layout: homepage
         <div class="title-underline"></div>
     </div>
     
-    <div class="profile-section">
-        <div class="section-content">
-            <img src="/assets/img/ppp.png">
-            <div class="section-text">
-                <p>
-                   🔬 I am currently seeking <strong>Ph.D. opportunities in Mathematical Statistics and Mathematical Statistical Physics</strong>, with a strong emphasis on the mathematical foundations of stochastic systems and random processes. My research lies at the intersection of <strong>randomness, geometry, and complex dynamical systems</strong>, where I study how local stochastic interactions give rise to emergent macroscopic behavior.
-                </p>
-                
-                <p>
-                    My approach combines rigorous mathematical analysis with computational methods to explore phenomena across scales, from microscopic particle interactions to macroscopic phase transitions in complex systems.
-                </p>
+    <div class="profile-content">
+        <!-- Main Profile Section -->
+        <div class="profile-section">
+            <div class="section-content">
+                <div class="section-icon">
+                    <img src="/assets/img/ppp.png" alt="Profile icon">
+                </div>
+                <div class="section-text">
+                    <p>
+                       🔬 I am currently seeking <strong>Ph.D. opportunities in Mathematical Statistics and Mathematical Statistical Physics</strong>, with a strong emphasis on the mathematical foundations of stochastic systems and random processes. My research lies at the intersection of <strong>randomness, geometry, and complex dynamical systems</strong>, where I study how local stochastic interactions give rise to emergent macroscopic behavior.
+                    </p>
+                    <p>
+                        My approach combines rigorous mathematical analysis with computational methods to explore phenomena across scales, from microscopic particle interactions to macroscopic phase transitions in complex systems.
+                    </p>
+                </div>
             </div>
         </div>
         
+        <!-- Core Research Interests -->
         <div class="profile-section">
             <div class="section-content">
-                <img src="/assets/img/ppp.png">
+                <div class="section-icon">
+                    <img src="/assets/img/ppp.png" alt="Research interests icon">
+                </div>
                 <div class="section-text">
                     <h3>📌 Core Research Interests</h3>
                     <ul class="research-interests">
@@ -39,9 +46,12 @@ layout: homepage
             </div>
         </div>
         
+        <!-- Research Vision -->
         <div class="profile-section">
             <div class="section-content">
-                <img src="/assets/img/ppp.png">
+                <div class="section-icon">
+                    <img src="/assets/img/ppp.png" alt="Research vision icon">
+                </div>
                 <div class="section-text">
                     <h3>🎯 Research Vision</h3>
                     <p>
@@ -51,9 +61,12 @@ layout: homepage
             </div>
         </div>
         
+        <!-- Applied Work -->
         <div class="profile-section">
             <div class="section-content">
-                <img src="/assets/img/ppp.png">
+                <div class="section-icon">
+                    <img src="/assets/img/ppp.png" alt="Applied work icon">
+                </div>
                 <div class="section-text">
                     <h3>💼 Applied & Collaborative Work</h3>
                     <p>
@@ -115,14 +128,18 @@ layout: homepage
     border-radius: 2px;
 }
 
+.profile-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
 .profile-section {
-    margin-bottom: 30px;
     padding-bottom: 30px;
     border-bottom: 1px solid #eaeaea;
 }
 
 .profile-section:last-child {
-    margin-bottom: 0;
     padding-bottom: 0;
     border-bottom: none;
 }
@@ -135,15 +152,24 @@ layout: homepage
 }
 
 .section-icon {
+    flex-shrink: 0;
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    object-fit: cover;
     border: 3px solid #2c5282;
     background: #f8fafc;
     padding: 8px;
-    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     box-shadow: 0 4px 8px rgba(44, 82, 130, 0.15);
+}
+
+.section-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50%;
 }
 
 .section-text {
@@ -174,27 +200,35 @@ layout: homepage
     padding-left: 0;
     margin: 15px 0;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 8px;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 10px;
 }
 
 .research-interests li {
-    padding: 10px 0;
-    padding-left: 30px;
+    padding: 12px 15px;
+    padding-left: 40px;
     position: relative;
-    margin-bottom: 5px;
     background: #f8fafc;
-    border-radius: 6px;
+    border-radius: 8px;
     border-left: 4px solid #2c5282;
+    transition: all 0.2s ease;
+}
+
+.research-interests li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background: #e6f7ff;
 }
 
 .research-interests li:before {
     content: "▸";
     color: #2c5282;
     font-weight: bold;
+    font-size: 1.1rem;
     position: absolute;
-    left: 12px;
-    top: 10px;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 /* Dark Mode Support */
@@ -236,6 +270,11 @@ layout: homepage
         border-left-color: #63b3ed;
     }
     
+    .research-interests li:hover {
+        background: #3a4a63;
+        box-shadow: 0 4px 8px rgba(99, 179, 237, 0.15);
+    }
+    
     .research-interests li:before {
         color: #63b3ed;
     }
@@ -252,7 +291,7 @@ layout: homepage
     .section-icon {
         width: 50px;
         height: 50px;
-        align-self: center;
+        align-self: flex-start;
     }
     
     .section-text h3 {
@@ -263,21 +302,26 @@ layout: homepage
         padding: 20px;
     }
     
+    .profile-content {
+        gap: 25px;
+    }
+    
     .profile-section {
-        margin-bottom: 25px;
         padding-bottom: 25px;
     }
     
     .research-interests {
         grid-template-columns: 1fr;
+        gap: 8px;
     }
     
     .research-interests li {
-        padding-left: 25px;
+        padding: 10px 15px;
+        padding-left: 35px;
     }
     
     .research-interests li:before {
-        left: 8px;
+        left: 12px;
     }
 }
 
@@ -298,5 +342,28 @@ layout: homepage
         width: 45px;
         height: 45px;
     }
+    
+    .research-interests li {
+        padding: 8px 12px;
+        padding-left: 30px;
+    }
+    
+    .research-interests li:before {
+        left: 10px;
+    }
+}
+
+/* Accessibility improvements */
+.section-icon img {
+    display: block;
+}
+
+.section-text strong {
+    font-weight: 700;
+}
+
+/* Smooth scrolling for anchor links */
+html {
+    scroll-behavior: smooth;
 }
 </style>
