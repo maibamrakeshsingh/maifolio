@@ -14,7 +14,7 @@ layout: homepage
         <div class="profile-section">
             <div class="section-content">
                 <div class="section-icon">
-                    <img src="/assets/img/ppp.png" alt="Profile icon">
+                    <img src="/assets/img/profile-icon.png" alt="Profile icon - Researcher portrait or symbol">
                 </div>
                 <div class="section-text">
                     <p>
@@ -31,7 +31,7 @@ layout: homepage
         <div class="profile-section">
             <div class="section-content">
                 <div class="section-icon">
-                    <img src="/assets/img/ppp.png" alt="Research interests icon">
+                    <img src="/assets/img/research-interests-icon.png" alt="Research interests icon - Network or brain graphic">
                 </div>
                 <div class="section-text">
                     <h3>📌 Core Research Interests</h3>
@@ -50,7 +50,7 @@ layout: homepage
         <div class="profile-section">
             <div class="section-content">
                 <div class="section-icon">
-                    <img src="/assets/img/ppp.png" alt="Research vision icon">
+                    <img src="/assets/img/research-vision-icon.png" alt="Research vision icon - Telescope or roadmap graphic">
                 </div>
                 <div class="section-text">
                     <h3>🎯 Research Vision</h3>
@@ -65,7 +65,7 @@ layout: homepage
         <div class="profile-section">
             <div class="section-content">
                 <div class="section-icon">
-                    <img src="/assets/img/ppp.png" alt="Applied work icon">
+                    <img src="/assets/img/applied-work-icon.png" alt="Applied work icon - Data science or ML graphic">
                 </div>
                 <div class="section-text">
                     <h3>💼 Applied & Collaborative Work</h3>
@@ -365,5 +365,19 @@ layout: homepage
 /* Smooth scrolling for anchor links */
 html {
     scroll-behavior: smooth;
+}
+
+/* Fallback for missing images */
+.section-icon img {
+    background-color: #f0f4f8;
+}
+
+.section-icon img:before {
+    content: "⚠️";
+    display: block;
+    font-size: 1.5rem;
+    color: #718096;
+    text-align: center;
+    line-height: 60px;
 }
 </style>
