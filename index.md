@@ -13,8 +13,8 @@ layout: homepage
         <!-- Main Profile Section -->
         <div class="profile-section">
             <div class="section-content">
-                <div class="section-icon">
-                    <img src="/assets/img/ppp.png" alt="Profile icon - Researcher portrait or symbol">
+                <div class="section-image">
+                    <img src="/assets/img/profile-photo.jpg" alt="Researcher profile photo">
                 </div>
                 <div class="section-text">
                     <p>
@@ -30,8 +30,8 @@ layout: homepage
         <!-- Core Research Interests -->
         <div class="profile-section">
             <div class="section-content">
-                <div class="section-icon">
-                    <img src="/assets/img/research-interests-icon.png" alt="Research interests icon - Network or brain graphic">
+                <div class="section-image">
+                    <img src="/assets/img/research-interests.jpg" alt="Complex systems and network visualization">
                 </div>
                 <div class="section-text">
                     <h3>📌 Core Research Interests</h3>
@@ -49,8 +49,8 @@ layout: homepage
         <!-- Research Vision -->
         <div class="profile-section">
             <div class="section-content">
-                <div class="section-icon">
-                    <img src="/assets/img/research-vision-icon.png" alt="Research vision icon - Telescope or roadmap graphic">
+                <div class="section-image">
+                    <img src="/assets/img/research-vision.jpg" alt="Research vision and future directions">
                 </div>
                 <div class="section-text">
                     <h3>🎯 Research Vision</h3>
@@ -64,8 +64,8 @@ layout: homepage
         <!-- Applied Work -->
         <div class="profile-section">
             <div class="section-content">
-                <div class="section-icon">
-                    <img src="/assets/img/applied-work-icon.png" alt="Applied work icon - Data science or ML graphic">
+                <div class="section-image">
+                    <img src="/assets/img/applied-work.jpg" alt="Data science and machine learning applications">
                 </div>
                 <div class="section-text">
                     <h3>💼 Applied & Collaborative Work</h3>
@@ -89,54 +89,62 @@ layout: homepage
 
 <!-- CSS Styles -->
 <style>
+/* Base Styles */
 .profile-card, .publications-card {
     border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    padding: 30px;
-    margin-bottom: 30px;
+    border-radius: 12px;
+    padding: 35px;
+    margin-bottom: 40px;
     background: white;
     transition: all 0.3s ease;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
     overflow: hidden;
 }
 
 .profile-card:hover, .publications-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
 }
 
 .section-header {
-    margin-bottom: 25px;
+    margin-bottom: 35px;
     position: relative;
 }
 
 .profile-card h2, .publications-card h2 {
-    color: #2c5282;
-    padding-bottom: 8px;
+    color: #1a365d;
+    padding-bottom: 12px;
     margin-top: 0;
     margin-bottom: 0;
-    font-weight: 700;
-    font-size: 1.8rem;
+    font-weight: 800;
+    font-size: 2.2rem;
     display: inline-block;
+    position: relative;
 }
 
 .title-underline {
-    height: 3px;
+    height: 4px;
     width: 100%;
-    background: #2c5282;
-    margin-top: 5px;
+    background: linear-gradient(90deg, #2c5282, #4299e1);
+    margin-top: 8px;
     border-radius: 2px;
 }
 
+/* Profile Content Layout */
 .profile-content {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 40px;
 }
 
 .profile-section {
-    padding-bottom: 30px;
+    padding-bottom: 35px;
     border-bottom: 1px solid #eaeaea;
+    transition: all 0.3s ease;
+}
+
+.profile-section:hover {
+    border-bottom-color: #cbd5e0;
 }
 
 .profile-section:last-child {
@@ -144,111 +152,146 @@ layout: homepage
     border-bottom: none;
 }
 
+/* Section Content */
 .section-content {
     display: flex;
     align-items: flex-start;
-    gap: 25px;
-    margin-top: 10px;
+    gap: 30px;
+    margin-top: 15px;
 }
 
-.section-icon {
+/* Section Images */
+.section-image {
     flex-shrink: 0;
-    width: 60px;
-    height: 60px;
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
-    border: 3px solid #2c5282;
-    background: #f8fafc;
-    padding: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 8px rgba(44, 82, 130, 0.15);
+    overflow: hidden;
+    border: 4px solid #2c5282;
+    box-shadow: 0 6px 20px rgba(44, 82, 130, 0.15);
+    transition: all 0.3s ease;
+    position: relative;
 }
 
-.section-icon img {
+.section-image:hover {
+    transform: scale(1.05);
+    border-color: #4299e1;
+    box-shadow: 0 8px 25px rgba(44, 82, 130, 0.25);
+}
+
+.section-image img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
-    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
 }
 
+.section-image:hover img {
+    transform: scale(1.1);
+}
+
+/* Section Text */
 .section-text {
     flex: 1;
+    min-width: 0; /* Prevent flex item overflow */
 }
 
 .section-text h3 {
     color: #2c5282;
     margin-top: 0;
-    margin-bottom: 15px;
-    font-weight: 600;
-    font-size: 1.3rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 1.5rem;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+.section-text h3::before {
+    font-size: 1.8rem;
 }
 
 .section-text p {
-    font-size: 1.08rem;
-    line-height: 1.75;
-    color: #333;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #2d3748;
     margin-bottom: 0;
     text-align: justify;
+    hyphens: auto;
 }
 
+.section-text p + p {
+    margin-top: 20px;
+}
+
+/* Research Interests */
 .research-interests {
     list-style: none;
     padding-left: 0;
-    margin: 15px 0;
+    margin: 20px 0;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
 }
 
 .research-interests li {
-    padding: 12px 15px;
-    padding-left: 40px;
+    padding: 16px 20px;
+    padding-left: 45px;
     position: relative;
-    background: #f8fafc;
-    border-radius: 8px;
-    border-left: 4px solid #2c5282;
-    transition: all 0.2s ease;
+    background: linear-gradient(135deg, #f7fafc, #edf2f7);
+    border-radius: 10px;
+    border-left: 5px solid #2c5282;
+    transition: all 0.3s ease;
+    cursor: default;
 }
 
 .research-interests li:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    background: #e6f7ff;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    background: linear-gradient(135deg, #e6fffa, #b2f5ea);
+    border-left-color: #38b2ac;
 }
 
 .research-interests li:before {
-    content: "▸";
+    content: "➤";
     color: #2c5282;
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     position: absolute;
-    left: 15px;
+    left: 18px;
     top: 50%;
     transform: translateY(-50%);
+    transition: color 0.3s ease;
+}
+
+.research-interests li:hover:before {
+    color: #38b2ac;
 }
 
 /* Dark Mode Support */
 @media (prefers-color-scheme: dark) {
     .profile-card, .publications-card {
-        background: #1e1e1e;
-        border-color: #404040;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+        background: #1a202c;
+        border-color: #4a5568;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     }
     
     .profile-section {
-        border-bottom-color: #404040;
+        border-bottom-color: #4a5568;
+    }
+    
+    .profile-section:hover {
+        border-bottom-color: #718096;
     }
     
     .profile-card h2, .publications-card h2 {
-        color: #63b3ed;
+        color: #90cdf4;
     }
     
     .title-underline {
-        background: #63b3ed;
+        background: linear-gradient(90deg, #63b3ed, #4299e1);
     }
     
     .section-text p {
@@ -256,27 +299,36 @@ layout: homepage
     }
     
     .section-text h3 {
-        color: #63b3ed;
+        color: #90cdf4;
+        border-bottom-color: #4a5568;
     }
     
-    .section-icon {
+    .section-image {
         border-color: #63b3ed;
-        background: #2d3748;
-        box-shadow: 0 4px 8px rgba(99, 179, 237, 0.2);
+        box-shadow: 0 6px 20px rgba(99, 179, 237, 0.2);
+    }
+    
+    .section-image:hover {
+        border-color: #90cdf4;
+        box-shadow: 0 8px 25px rgba(99, 179, 237, 0.3);
     }
     
     .research-interests li {
-        background: #2d3748;
+        background: linear-gradient(135deg, #2d3748, #4a5568);
         border-left-color: #63b3ed;
     }
     
     .research-interests li:hover {
-        background: #3a4a63;
-        box-shadow: 0 4px 8px rgba(99, 179, 237, 0.15);
+        background: linear-gradient(135deg, #2c7a7b, #285e61);
+        border-left-color: #38b2ac;
     }
     
     .research-interests li:before {
         color: #63b3ed;
+    }
+    
+    .research-interests li:hover:before {
+        color: #38b2ac;
     }
 }
 
@@ -284,82 +336,111 @@ layout: homepage
 @media (max-width: 768px) {
     .section-content {
         flex-direction: column;
-        align-items: flex-start;
-        gap: 20px;
+        align-items: center;
+        gap: 25px;
+        text-align: center;
     }
     
-    .section-icon {
-        width: 50px;
-        height: 50px;
-        align-self: flex-start;
+    .section-image {
+        width: 120px;
+        height: 120px;
+        align-self: center;
     }
     
     .section-text h3 {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
+        justify-content: center;
+        text-align: center;
     }
     
     .profile-card, .publications-card {
-        padding: 20px;
+        padding: 25px;
+    }
+    
+    .profile-card h2, .publications-card h2 {
+        font-size: 1.8rem;
     }
     
     .profile-content {
-        gap: 25px;
+        gap: 30px;
     }
     
     .profile-section {
-        padding-bottom: 25px;
+        padding-bottom: 30px;
     }
     
     .research-interests {
         grid-template-columns: 1fr;
-        gap: 8px;
+        gap: 12px;
     }
     
     .research-interests li {
-        padding: 10px 15px;
-        padding-left: 35px;
+        padding: 14px 18px;
+        padding-left: 40px;
+        text-align: left;
     }
     
     .research-interests li:before {
-        left: 12px;
+        left: 15px;
+    }
+    
+    .section-text p {
+        text-align: left;
     }
 }
 
 @media (max-width: 480px) {
     .profile-card, .publications-card {
-        padding: 15px;
+        padding: 20px;
+        margin-bottom: 30px;
     }
     
     .profile-card h2, .publications-card h2 {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
+        padding-bottom: 8px;
     }
     
     .section-text p {
-        font-size: 1rem;
+        font-size: 1.05rem;
+        line-height: 1.7;
     }
     
-    .section-icon {
-        width: 45px;
-        height: 45px;
+    .section-image {
+        width: 100px;
+        height: 100px;
+        border-width: 3px;
+    }
+    
+    .section-text h3 {
+        font-size: 1.3rem;
+        margin-bottom: 15px;
     }
     
     .research-interests li {
-        padding: 8px 12px;
-        padding-left: 30px;
+        padding: 12px 15px;
+        padding-left: 35px;
     }
     
     .research-interests li:before {
-        left: 10px;
+        left: 12px;
+        font-size: 1.1rem;
     }
 }
 
 /* Accessibility improvements */
-.section-icon img {
+.section-image img {
     display: block;
 }
 
 .section-text strong {
     font-weight: 700;
+    color: #2c5282;
+}
+
+@media (prefers-color-scheme: dark) {
+    .section-text strong {
+        color: #90cdf4;
+    }
 }
 
 /* Smooth scrolling for anchor links */
@@ -367,17 +448,29 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Fallback for missing images */
-.section-icon img {
-    background-color: #f0f4f8;
+/* Focus styles for accessibility */
+.section-image:focus,
+.research-interests li:focus {
+    outline: 3px solid #4299e1;
+    outline-offset: 2px;
 }
 
-.section-icon img:before {
-    content: "⚠️";
-    display: block;
-    font-size: 1.5rem;
-    color: #718096;
-    text-align: center;
-    line-height: 60px;
+/* Print styles */
+@media print {
+    .profile-card, .publications-card {
+        box-shadow: none;
+        border: 1px solid #ccc;
+        break-inside: avoid;
+    }
+    
+    .section-image {
+        border: 2px solid #333;
+        box-shadow: none;
+    }
+    
+    .profile-card:hover, .publications-card:hover {
+        transform: none;
+        box-shadow: none;
+    }
 }
 </style>
