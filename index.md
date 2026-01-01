@@ -14,7 +14,7 @@ layout: homepage
         <div class="profile-section">
             <div class="section-content">
                 <div class="section-image">
-                    <img src="/assets/img/profile-photo.jpg" alt="Researcher profile photo">
+                    <img src="/assets/img/ppp.png" alt="Researcher profile photo">
                 </div>
                 <div class="section-text">
                     <p>
